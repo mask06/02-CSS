@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background-color: #1c1c1c;
+            color: whitesmoke;
+        }
+        .item{
+            border: 2px solid whitesmoke;
+            border-radius: 15px;
+            text-align: center;
+            padding: 15px;
+        }
+        .container{
+            height: 100%;
+            padding: 15px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 250px 2fr 2fr ;
+            grid-template-rows:100px 1fr 2fr 200px ;
+            grid-template-areas:
+            "nav nav nav"
+            "side slider slider"
+            "side cn-1 cn-2"
+            "side footer footer"
+            ;
+        }
+        .menu{grid-area: nav;}
+        .side{grid-area: side;}
+        .slider{grid-area: slider;}
+        .content-1{grid-area: cn-1;}
+        .content-2{grid-area: cn-2;}
+        .footer{grid-area: footer;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item menu">MENU</div>
+        <div class="item side">SIDEBAR</div>
+        <div class="item slider">SLIDER</div>
+        <div class="item content-1">CONTENT-1</div>
+        <div class="item content-2">CONTENT-2</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+</html>

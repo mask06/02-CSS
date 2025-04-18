@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit-Border</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Playwrite+AU+VIC+Guides&display=swap');
+        /* 
+        --sabit birimler
+            1px = 0.026cm
+            1cm = 37.8px
+            1in = 2.54cm = 96.12px
+            1pt = 1/72in
+            1pc = 12pt
+        --göreceli birimler
+            %,vw,vh
+        --diğer
+            em,rem
+        */
+        .goreceli{
+            background-color: orangered;
+            width: 50%;
+            /* font-size: 3vw; */
+            font-size: 3vh;
+        }
+        /* em ata dizine göre oransal bir bütünlük sağlar. local bir standart belirlenmesi için kullanılır. */
+        .diger{
+            font-size: 18px;
+        }
+        .em-birimi b{
+            font-size: 2em;
+        }
+        .bilgeadam mark{
+            font-size: 1.5em;
+        }
+        /* rem ise root'a yani kök dizine göre oransal bir standart oluşturulmasını sağlar. */
+        html{
+            font-size: 10px;
+        }
+        .esb{
+            font-size: 2rem;
+        }
+        .border{
+            width: 150px;
+            height: 150px;
+            background-color: thistle;
+            /* border-top-style: solid ; */
+            /* border-style: solid dotted dashed double; */
+            /* border-style: solid none; */
+            /* border-style: none solid; */
+            /* border-width: 2px 4px 6px 8px; */
+            /* border-color: red black green yellow; */
+            border: 1px solid black;
+            border-radius: 10px;
+            border-radius: 75px;
+            border-radius: 7566666px;
+            border-radius:50%;
+            border-radius: 87% 13% 30% 70% / 21% 21% 79% 79% ;
+        }
+        .serif{
+            font-family: serif;
+        }
+        .sans-serif{
+            font-family: sans-serif;
+        }
+        .cursive{
+            font-family: cursive;
+        }
+        .fantasy{
+            font-family: fantasy;
+        }
+        .monospace{
+            font-family: monospace;
+        }
+        .websafe{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .google-1{
+            font-family: "Playwrite AU VIC Guides", serif;
+        }
+        .google-2{
+            font-family: "Bebas Neue", serif;
+        }
+        .google-3{
+            font-family: "Doto", serif;
+        }
+    </style>
+</head>
+<body>
+        <div class="border"></div>
+        <div class="goreceli">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint iure quasi amet enim distinctio, necessitatibus blanditiis unde deleniti doloribus accusamus corrupti autem nam quos rem quia quae vero modi.
+        </div>
+        <span>eSb</span>
+        <div class="diger">
+            <p class="em-birimi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos odio <b>unde libero consequuntur distinctio,</b> omnis modi id accusamus soluta quam quas? Accusantium natus nisi nam sunt, tenetur odio sed!
+            </p>
+            <p class="bilgeadam">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos odio <mark>unde libero consequuntur distinctio,</mark> omnis modi id accusamus soluta quam quas? Accusantium natus nisi nam sunt, tenetur odio sed!
+            </p>
+        </div>
+        <p class="esb">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nesciunt delectus eaque sequi. Rem modi molestiae reiciendis voluptatem laboriosam quia temporibus natus, assumenda eveniet explicabo quibusdam, ad obcaecati saepe delectus!
+        </p>
+        <h3 class="serif">BilgeAdam</h3>
+        <h3 class="sans-serif">BilgeAdam</h3>
+        <h3 class="cursive">BilgeAdam</h3>
+        <h3 class="fantasy">BilgeAdam</h3>
+        <h3 class="monospace">BilgeAdam</h3>
+        <h3 class="websafe">BilgeAdam</h3>
+        <h3 class="google-1">BilgeAdam</h3>
+        <h3 class="google-2">BilgeAdam</h3>
+        <h3 class="google-3">BilgeAdam</h3>
+        
+</body>
+</html>

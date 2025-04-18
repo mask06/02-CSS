@@ -1,0 +1,104 @@
+h3{
+    color: blueviolet;
+}
+h4{
+    color: antiquewhite !important;
+    background-color: grey;
+}
+#first{
+    color: green;
+}
+#second{
+    color: orangered;
+}
+.bilge{
+    color: aqua;
+}
+.adam{
+    background-color: black;
+}
+/* .birinci{
+    background-color: lightcoral;
+} */
+
+.container .birinci{
+    background-color: lightgreen;
+}
+/* span.birinci{
+    color: lightcoral;
+    background-color: black !important;
+} */
+.container span.birinci{
+    color: lightcoral;
+    background-color: black;
+}
+
+.section p span{
+    background-color: lightsalmon;
+}
+
+.section>span{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.liste .list-item{
+    color: red;
+}
+.liste li:first-child{
+    color: blue;
+}
+.liste li:last-child{
+    color: green;
+}
+.liste li:nth-child(2){
+    color: aqua;
+}
+.liste li:nth-child(3){
+    color: violet;
+}
+.liste li:nth-child(odd){
+    color: violet;
+}
+.liste li:nth-child(even){
+    color: blue;
+}
+.liste li:nth-child(3n+1){
+    color: orange;
+}
+.pseudo {
+    background-color: lightblue;
+}
+/* .pseudo::before{
+    content: "-START-";
+    color: red;
+}
+.pseudo::after{
+    content: "-END-";
+    color: red;
+} */
+.pseudo::first-line{
+   color: blue;
+}
+.pseudo::first-letter{
+   color: red;
+   font-size: 25px;
+   background-color: black;
+}
+a.test-1:active{
+    color: aqua;
+}
+a.test-1:link{
+    color: lightcoral;
+}
+a.test-1:visited{
+    color: greenyellow;
+}
+a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+::marker{
+    content: " \1F911 ";
+}

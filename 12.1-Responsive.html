@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            transition: 2s;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* gap: 10px; */
+        }
+        div{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+        }
+        /* Aralılar arası responsive ayar */
+        /* @media (min-width: 600px) and (max-width:1000px){ */
+        @media (width>= 600px) and (width<=1000px){
+            /* değerler aralığında geçerli olacak css kodları anlamına gelir */
+            body{
+                background-color: black;
+            }
+        }
+        /* Large Screen First */
+        /* @media (max-width:1200px){ */
+        @media (width<=1200px){
+            /* bu pixelin altında geçerli olacak css kodları anlamına gelir. */
+            div{
+                width: 33%;
+                
+            }
+        }
+        /* @media (max-width: 800px){ */
+        @media (width<= 800px){
+            div{
+                width: 50%;
+            }
+            .box-3{
+                display: none;
+            }
+        }
+        /* @media (max-width: 600px){ */
+        @media (width<= 600px){
+            div{
+                width: 90%;
+            }
+            .box-3{
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box-1" style="background-color: lightblue;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, corrupti quia esse nihil, dolorem quibusdam necessitatibus laborum amet molestias sed aliquid id hic, ipsa optio magni odio unde reiciendis. Fugit!
+    </div>
+    <div class="box-2" style="background-color: lightgoldenrodyellow;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, corrupti quia esse nihil, dolorem quibusdam necessitatibus laborum amet molestias sed aliquid id hic, ipsa optio magni odio unde reiciendis. Fugit!
+    </div>
+    <div class="box-3" style="background-color: lightgreen;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, corrupti quia esse nihil, dolorem quibusdam necessitatibus laborum amet molestias sed aliquid id hic, ipsa optio magni odio unde reiciendis. Fugit!
+    </div>
+    <div class="box-4" style="background-color: lightgrey;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, corrupti quia esse nihil, dolorem quibusdam necessitatibus laborum amet molestias sed aliquid id hic, ipsa optio magni odio unde reiciendis. Fugit!
+    </div>
+    <div class="box-5" style="background-color: lightcoral;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, corrupti quia esse nihil, dolorem quibusdam necessitatibus laborum amet molestias sed aliquid id hic, ipsa optio magni odio unde reiciendis. Fugit!
+    </div>
+</body>
+</html>

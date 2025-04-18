@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 500px;
+            height: 550px;
+            background-color: lightgray;
+            border: 2px solid black;
+            margin:auto;
+            position: relative;
+            margin-bottom: 1500px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blueviolet;
+        }
+        /* bütün elementlerin default position durumu static'tir. bu durumda positions ile lullanılan left, right ,bottom ve top gibi komutlar aktif değildir.  */
+        .box-1{
+            /* position: static; */
+            /* relative: göreceli konum demektir. referans noktası olarak ilk konumunun sol üst köşesini alır. ilk konumunda hayalet izini bırakır. diğer elementle bu yüzden boşluğunu doldurmazlar*/
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 0;
+            z-index: 1;
+        }
+        .box-2{
+            /* absolute: mutlak konum demektir. bu konum verildiğinde ilk konumunda oluşan boşluğu bu elementten sonra gelen elementler doldurur. absolute pozisyonu verilen element ata elementinin pozisyon durumunu kontrol eder. Eğer ata elementi pozisyonsuzsa default olarak sayfanın sol üst köşesini referans alır. absolute pozisyonu genellikle parent elementine relative pozisyon verilerek kullanılır. böylece referans noktası olarak relative verilmiş parent elementin sol üst köşesi alınır. */
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: -1;
+            z-index: 3;
+        }
+        .box-3{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        h3{
+            margin-top: 100px;
+        }
+        .box-4{
+            position: sticky;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h3>BilgeAdam Akademi</h3>
+    <div class="container">
+        <div style="background-color: lightblue;" class="box box-1"></div>
+        <div style="background-color: lightcoral;" class="box box-2"></div>
+        <div style="background-color: rgb(144, 238, 144);" class="box box-3"></div>
+        <div style="background-color: lightgoldenrodyellow;" class="box box-4"></div>
+        <div style="background-color: lightslategray;" class="box box-5"></div>
+    </div>
+</body>
+</html>
